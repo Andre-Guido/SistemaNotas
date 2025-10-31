@@ -22,6 +22,10 @@ namespace SistemaNotas.Controlador
                 return false;
             }
         }
+        /// <summary>
+        /// Obtiene todas las carreras.
+        /// </summary>
+        /// <returns></returns>
         public List<Carrera> GetCarreras()
         {
             return carreras;
@@ -40,6 +44,16 @@ namespace SistemaNotas.Controlador
             }
             carreras.Remove(carrera);
             return true;
+        }
+        /// <summary>
+        /// Busca un elemento y retorna los elementos que coinciden.
+        /// </summary>
+        /// <param name="dato"></param>
+        /// <returns></returns>
+        public List<Carrera> GetCarreras(string dato)
+        {
+            List<Carrera> carreras = new List<Carrera>();
+            return carreras;
         }
     }
 }
